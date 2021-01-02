@@ -5,31 +5,105 @@
         <link rel="stylesheet" href="css/estilos.css" type="text/css">
     </head>
     <body>
-        <header>
+        <section class="portada">
             <h1>VIAJES BOSCO</h1>
             <h2> Las mejores aventuras por todo el mundo gestionadas por tu propio centro educativo</h2>
             <p><img alt="Cambiar imagen" onmouseout="this.src='img/abajo-1.png';" onmouseover="this.src='img/abajo-2.png';" src="img/abajo-1.png" /></p>
-        </header>
-        <main>
+        </section>
+        <section class="menu">
             <table>
                 <thead>
                     <tr>
-                        <th>INTRODUCCIÓN</th>
-                        <th>INDIA</th>
-                        <th>MÉXICO</th>
-                        <th>NUEVA ZELANDA</th>
-                        <th>PERU</th>
-                        <th>ISLANDIA</th>
-                        <th>JAPON</th>
+                        <th><a href="#introduccion">INTRODUCCIÓN</a></th>
+                        <th><a href="#india">INDIA</a></th>
+                        <th><a href="#mexico">MÉXICO</a></th>
+                        <th><a href="#nz" >NUEVA ZELANDA</a></th>
+                        <th><a href="#peru">PERÚ</a></th>
+                        <th><a href="#islandia">ISLANDIA</a></th>
+                        <th><a href="#japon">JAPÓN</a></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" rowspan="2"><h2>NO SUEÑES, VUELA DE VERDAD</h2></td>
-                    </tr>
-                </tbody>
             </table>
-        </main>
+        </section>
+        <section class="introduccion" id="introduccion">
+            <h1>NO SUEÑES, VUELA DE VERDAD</h1>
+            <p>Tenemos los mejores aviones hacia destinos de todo el planeta. Sólo dinos dónde quieres ir</p>
+            <img src="img/viaje.jpg" alt="foto viaje" width="820" >
+
+        </section>
+        <section class="paises">
+            <table>
+                <tr>
+                    <td >
+                        <h1>INDIA</h1>
+                        <img src="img/india.jpg" alt="imagen de la India">
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                    <td>
+                        <h1>MEXICO</h1>
+                        <img src="img/mexico.jpg" alt="imagen de Mexico">
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <h1>NUEVA ZELANDA</h1>
+                        <img src="img/nuevazelanda.jpg" alt="imagen de Nueva Zelanda" >
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                    <td>
+                        <h1>PERÚ</h1>
+                        <img src="img/peru.jpg" alt="imagen de Peru">
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <h1>ISLANDIA</h1>
+                        <img src="img/islandia.jpg" alt="imagen de Islandia" >
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                    <td>
+                        <h1>JAPÓN</h1>
+                        <img src="img/japon.jpg" alt="imagen de Japon">
+                        <p><a>Haz click para elegir este destino</a></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="formulario">
+            <form>
+                <h1>ENVÍO DE DATOS</h1>
+
+                <label for="nombre">NOMBRE</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+
+                <label for="apellidos">APELLIDOS</label><br>
+                <input type="text" id="apellidos" name="apellidos"><br>
+
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="email">
+
+                <fieldset>
+                    <legend>VIAJES DESTACADOS</legend>
+                    <label for="india">INDIA</label>
+                    <input type="checkbox" name="viajes" id="india" value="india">
+                    <label for="mexico">MÉXICO</label>
+                    <input type="checkbox" name="viajes" id="mexico" value="mexico">
+                    <label for="nuevaz">NUEVA ZELANDA</label>
+                    <input type="checkbox" name="viajes" id="nuevaz" value="nueva zelanda">
+                    <label for="peru">PERÚ</label>
+                    <input type="checkbox" name="viajes" id="peru" value="peru">
+                    <label for="islandia">ISLANDIA</label>
+                    <input type="checkbox" name="viajes" id="islandia" value="islandia">
+                    <label for="japon">JAPÓN</label>
+                    <input type="checkbox" name="viajes" id="japon" value="japon">
+                </fieldset>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+
 
     </body>
 </html>
