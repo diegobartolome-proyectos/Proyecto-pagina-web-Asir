@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
             <title>Viajes Bosco</title>
         <link rel="stylesheet" href="css/estilos.css" type="text/css">
+        <script src="js/script.js"></script>
     </head>
     <body>
         <section class="portada">
@@ -13,13 +14,15 @@
         <section class="menu">
             <table class="menu">
                     <tr>
-                        <th><a href="#introduccion">INTRODUCCIÓN</a></th>
-                        <th><a href="#india">INDIA</a></th>
-                        <th><a href="#mexico">MÉXICO</a></th>
-                        <th><a href="#nuevaz" >NUEVA ZELANDA</a></th>
-                        <th><a href="#peru">PERÚ</a></th>
-                        <th><a href="#islandia">ISLANDIA</a></th>
-                        <th><a href="#japon">JAPÓN</a></th>
+
+                        <th><a href="#introduccion1">INTRODUCCIÓN</a></th>
+                        <th><a href="#india1">INDIA</a></th>
+                        <th><a href="#mexico1">MÉXICO</a></th>
+                        <th><a href="#nuevaz1" >NUEVA ZELANDA</a></th>
+                        <th><a href="#peru1">PERÚ</a></th>
+                        <th><a href="#islandia1">ISLANDIA</a></th>
+                        <th><a href="#japon1">JAPÓN</a></th>
+
                     </tr>
             </table>
         </section>
@@ -32,38 +35,38 @@
         <section class="paises">
             <table>
                 <tr>
-                    <td id="india" >
+                    <td id="india1" >
                         <h1>INDIA</h1>
-                        <img src="img/india.jpg" alt="imagen de la India">
-                        <p><a>Haz click para elegir este destino</a></p>
+                        <img src="img/india.jpg" alt="imagen de la India" onclick="pulsarindia()">
+                        <p><a >Haz click para elegir este destino</a></p>
                     </td>
-                    <td id="mexico">
+                    <td id="mexico1">
                         <h1>MEXICO</h1>
-                        <img src="img/mexico.jpg" alt="imagen de Mexico">
+                        <img src="img/mexico.jpg" alt="imagen de Mexico" onclick="pulsarmx()">
                         <p><a>Haz click para elegir este destino</a></p>
                     </td>
                 </tr>
                 <tr>
-                    <td id="nuevaz">
+                    <td id="nuevaz1">
                         <h1>NUEVA ZELANDA</h1>
-                        <img src="img/nuevazelanda.jpg" alt="imagen de Nueva Zelanda" >
+                        <img src="img/nuevazelanda.jpg" alt="imagen de Nueva Zelanda" onclick="pulsarnuevaz()">
                         <p><a>Haz click para elegir este destino</a></p>
                     </td>
-                    <td id="peru">
+                    <td id="peru1">
                         <h1>PERÚ</h1>
-                        <img src="img/peru.jpg" alt="imagen de Peru">
+                        <img src="img/peru.jpg" alt="imagen de Peru" onclick="pulsarperu()">
                         <p><a>Haz click para elegir este destino</a></p>
                     </td>
                 </tr>
                 <tr>
-                    <td id="islandia">
+                    <td id="islandia1">
                         <h1>ISLANDIA</h1>
-                        <img src="img/islandia.jpg" alt="imagen de Islandia" >
+                        <img src="img/islandia.jpg" alt="imagen de Islandia" onclick="pulsarislandia()" >
                         <p><a>Haz click para elegir este destino</a></p>
                     </td>
-                    <td id="japon">
+                    <td id="japon1">
                         <h1>JAPÓN</h1>
-                        <img src="img/japon.jpg" alt="imagen de Japon">
+                        <img src="img/japon.jpg" alt="imagen de Japon" onclick="pulsarjapon()">
                         <p><a>Haz click para elegir este destino</a></p>
                     </td>
                 </tr>
@@ -84,22 +87,22 @@
 
                 <fieldset>
                     <legend>VIAJES DESTACADOS</legend>
-                    <input type="checkbox" name="viajes" id="india" value="india">
+                    <input type="checkbox" name="viajes" id="india" value="india" onclick="pulsarindiaboton()">
                     <label for="india">INDIA</label>
 
-                    <input type="checkbox" name="viajes" id="mexico" value="mexico">
+                    <input type="checkbox" name="viajes" id="mexico" value="mexico" onclick="pulsarmxboton()">
                     <label for="mexico">MÉXICO</label>
 
-                    <input type="checkbox" name="viajes" id="nuevaz" value="nueva zelanda">
+                    <input type="checkbox" name="viajes" id="nuevaz" value="nueva zelanda" onclick="pulsarnuevazboton()">
                     <label for="nuevaz">NUEVA ZELANDA</label>
 
-                    <input type="checkbox" name="viajes" id="peru" value="peru">
+                    <input type="checkbox" name="viajes" id="peru" value="peru" onclick="pulsarperuboton()">
                     <label for="peru">PERÚ</label>
 
-                    <input type="checkbox" name="viajes" id="islandia" value="islandia">
+                    <input type="checkbox" name="viajes" id="islandia" value="islandia" onclick="pulsarislandiaboton()">
                     <label for="islandia">ISLANDIA</label>
 
-                    <input type="checkbox" name="viajes" id="japon" value="japon">
+                    <input type="checkbox" name="viajes" id="japon" value="japon" onclick="pulsarjaponboton()">
                     <label for="japon">JAPÓN</label>
 
                 </fieldset>
